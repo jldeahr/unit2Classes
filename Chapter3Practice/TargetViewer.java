@@ -21,8 +21,10 @@ public class TargetViewer
         frame.add(component);
         
         frame.setVisible(true);
-       
-    }
+        while (true)
+        {
+            
+        }
     
     
 }

@@ -3,6 +3,7 @@ import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 import javax.swing.JComponent;
 import java.awt.Color;
+import java.util.Random
 
 public class Target
 {
@@ -57,5 +58,14 @@ public class Target
         g2.fill(threeIn);
         g2.setColor(Color.BLACK);
         g2.fill(center);
+        
+        
+        
+        Random rand = new Random();
+        x1 = rand(500);
+        y1 = rand(500);
+        l = rand(200);
+        h = rand(200);
+        
     }
 }
