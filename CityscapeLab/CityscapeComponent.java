@@ -12,15 +12,7 @@ import javax.swing.JComponent;
 public class CityscapeComponent extends JComponent
 {
     /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
+     * Default constructor for objects of class 
      */
     public void paintComponent(Graphics g)
     {
@@ -28,7 +20,12 @@ public class CityscapeComponent extends JComponent
         
         // create instances of classes and invoke the draw method on each
         // ...
+        Building building1 = new Building();
         
+        int x = getWidth();
+        int y = getHeight();
+        
+        building1.draw(g2);
         
     }
 
