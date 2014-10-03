@@ -21,11 +21,13 @@ public class CityscapeComponent extends JComponent
         // create instances of classes and invoke the draw method on each
         // ...
         Building building1 = new Building();
+        Moon moon1 = new Moon();
         
         int x = getWidth();
         int y = getHeight();
         
         building1.draw(g2);
+        moon1.draw(g2);
         
     }
 
