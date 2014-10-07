@@ -14,20 +14,20 @@ import java.awt.geom.Ellipse2D;
 public class Sun
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int xLeft;
-    private int yTop;
-    private int leng;
-    private int wide;
+    private int xLeft;  //the beginning x value of the object
+    private int yTop;   //the beginning y value of the object
+    private int leng;   //the length of the object
+    private int wide;   //the height of the object
 
     /**
      * Default constructor for objects of class Sun
      */
     public Sun(int x, int y, int length, int width)
     {
-        xLeft = x;
-        yTop = y;
-        leng = length;
-        wide = width;
+        xLeft = x; //the x value of the object
+        yTop = y;  //the y value of the object
+        leng = length;  //the length of the object
+        wide = width;   //the height of the object
     }
 
     /**

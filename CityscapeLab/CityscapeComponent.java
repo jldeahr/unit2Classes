@@ -21,17 +21,17 @@ public class CityscapeComponent extends JComponent
         
         // create instances of classes and invoke the draw method on each
         // ...
-        Building building1 = new Building(110,110);
-        Building building2 = new Building(410,110);
-        Sun sun1 = new Sun(20,20,100,100);
-        Background daytime = new Background();
-        Cloud cloud1 = new Cloud(200,20,120,50);
-        Cloud cloud2 = new Cloud(350,30,130,60);
-        Cloud cloud3 = new Cloud(500,25,125,55);
-        
         
         int x = getWidth();
         int y = getHeight();
+        
+        Building building1 = new Building(110,110);
+        Building building2 = new Building(410,110);
+        Sun sun1 = new Sun(20,20,100,100);
+        Background daytime = new Background(x,y);
+        Cloud cloud1 = new Cloud(200,20,120,50);
+        Cloud cloud2 = new Cloud(350,30,130,60);
+        Cloud cloud3 = new Cloud(500,25,125,55);
         
         
         daytime.draw(g2);

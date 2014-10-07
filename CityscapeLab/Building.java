@@ -14,16 +14,16 @@ import java.awt.geom.Rectangle2D;
 public class Building
 {
     /** description of instance variable x (add comment for each instance variable) */
-    private int xLeft; // = 100
-    private int yTop;  // = 100
+    private int xLeft; //the starting x value of the object
+    private int yTop;  //the starting y value of the object
 
     /**
      * Default constructor for objects of class Building
      */
     public Building(int x, int y)
     {
-        xLeft = x;
-        yTop = y;
+        xLeft = x;  //the x value of the object
+        yTop = y;   //the y value of the object
     }
 
     /**
@@ -32,7 +32,6 @@ public class Building
      */
     public void draw(Graphics2D g2)
     {
-        //Get ready to read some hardcoding
         //Creates the building
         Rectangle2D.Double mainBuilding = new Rectangle2D.Double(xLeft, yTop, 275, 425);
         
