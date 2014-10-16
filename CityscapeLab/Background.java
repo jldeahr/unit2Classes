@@ -9,30 +9,30 @@ import java.awt.geom.Rectangle2D;
  * Class that creates a rectangle which will be the background color.
  * 
  * @author @jldeahr
- * @version 7 October 2014
+ * @version 16 October 2014
  */
 public class Background
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    
     private int leng;  //the length of the object
     private int wide;  //the width of the object
 
     /**
-     * Class that creates a background object.
+     * constructor for a background object.
      * 
-     * @author @jldeahr
-     * @version 7 October 2014
+     * @param
+     * leng = length of background object
+     * wide = width of background object
      */
     public Background(int length, int width)
     {
-        leng = length;  //length of the object
-        wide = width;  //width of the object
+        leng = length;
+        wide = width;
     }
 
     /**
-     *Draws the moon.
-     *@param g2 the graphics context
+     * Draws the moon.
+     * @param g2 the graphics context, leng, wide
+     * @return void
      */
     public void draw(Graphics2D g2)
     {
@@ -41,12 +41,8 @@ public class Background
         Rectangle2D.Double grass = new Rectangle2D.Double(0, 500, leng, wide);
         
         g2.setColor(Color.BLUE);
-        g2.draw(sky);
         g2.fill(sky);
         g2.setColor(Color.GREEN);
-        g2.draw(grass);
         g2.fill(grass);
-        
     }
-
 }

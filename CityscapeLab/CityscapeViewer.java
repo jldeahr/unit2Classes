@@ -3,8 +3,8 @@ import javax.swing.JFrame;
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
  * 
- * @author @gcschmit
- * @version 18 July 2014
+ * @author @jldeahr
+ * @version 16 October 2014
  */
 public class CityscapeViewer
 {
@@ -29,5 +29,4 @@ public class CityscapeViewer
         //  component.
         frame.setVisible(true);
     }
-
 }
